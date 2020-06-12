@@ -1,5 +1,5 @@
 // Assignment Code
-'use strict'
+"use strict";
 var generateBtn = document.querySelector("#generate");
 
 // GENERATOR FUNCTIONS
