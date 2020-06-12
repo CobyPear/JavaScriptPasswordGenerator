@@ -85,13 +85,12 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
 
     // set the result to a variable. the result will take a section of the appropriate lengthfrom the array
       // var finalPw = typesArr.slice(0, userLength).join('');
-      
+
         // shuffle the password to make it more random
         //here's a function that will attempt to shuffle the array
       function shufflePassword(arr) {
         // switches up the indexes of the array
         return arr.sort(() => Math.random() - 0.5);
-        ;
       };
 
       // set the result to a variable. the result will take a section of the appropriate lengthfrom the array
@@ -100,7 +99,7 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
       shufflePassword(finalPw);
       // turn the password into a string
       finalPw = finalPw.join('');
-  
+
       // debugging
       console.log('TYPESARR: ', typesArr);
       console.log('SHUFFLED PW: ', );
@@ -111,10 +110,7 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
 
       // return the generated password based on the passed in information
       return finalPw;
-
 };
-
-
 
 // Write password to the #password input
 function writePassword() {
