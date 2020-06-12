@@ -2,8 +2,7 @@
 
 You can find this project here: https://cobypear.github.io/JavaScriptPasswordGenerator/
 
-This application will prompt the user to state how long their password should be (between 8 and 128 characters), if , numeric lowercase, uppercase, and/or special characters should be included. At least one character of each type selected should be included in the generated password. After all prompts are answered, generate the password.
-
+    This application will prompt the user to state how long their password should be (between 8 and 128 characters), if , numeric lowercase, uppercase, and/or special characters should be included. At least one character of each type selected should be included in the generated password. After all prompts are answered, generate the password.
 
 ## User Interface
 
@@ -12,12 +11,12 @@ This application will prompt the user to state how long their password should be
 
 ## Generating a Password
 
-    To generate a password, click the Generate Password button.
+        To generate a password, click the Generate Password button.
     A prompt will appear asking the user how long they would like their password, between 8 and 128 characters.
 
 ![Length Prompt](https://imgur.com/aXuRkic.jpg)
 
-    Then a series of confirms will ask the user what they would like their password to consist of:
+        Then a series of confirms will ask the user what they would like their password to consist of:
     Lowercase letters, uppercase letters, numbers, and/or special characters.
 
 ![Lowercase Confirm](https://imgur.com/mVIjwa2.jpg)
@@ -29,8 +28,8 @@ This application will prompt the user to state how long their password should be
 
 ![Generated Password](https://imgur.com/rmP9HH6.jpg)
 
-    In case the user enters a number outside the appropriate range or the user 
-        fails to choose a type of character, the following messages will display:
+        In case the user enters a number outside the appropriate range or the user 
+    fails to choose a type of character, the following messages will display:
 
 ![Invalid Length](https://imgur.com/6rWsH40.jpg)
 ![No Chars Chosen](https://imgur.com/ugPRlgT.jpg)
