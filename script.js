@@ -42,13 +42,15 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
     // check user input and generate approriate characters
     if (userLength >= 8 && userLength <= 128) {
         // use a confirm to ask if the user wants to include lowercase characters
-        var userLower = confirm('Would you like your password to include lowercase letters?');
+        // var userLower = confirm('Would you like your password to include lowercase letters?');
+
+        var userLower = $("#lowercase input:checkbox:checked").val()
         // use a confirm to ask if the user wants to include uppercase characters
-        var userUpper = confirm('Would you like your password to include uppercase letters?');
+        var userUpper = $("#uppercase input:checkbox:checked").val()
         // use a confirm to ask if the user wants to include numeric characters
-        var userNumber = confirm('Would you like your password to include numerals?');
+        var userNumber = $("#numerals input:checkbox:checked").val()
         // use a confirm to ask if the user wants to include special characters
-        var userSpecial = confirm('Would you like your password to include special characters (i.e. !$/%^[&*)?');
+        var userSpecial = $("#special-chars input:checkbox:checked").val()
 
         // if user wants lowercase characaters, include this in the final password.
         // if the user wants uppercase characters, include this in the final password.

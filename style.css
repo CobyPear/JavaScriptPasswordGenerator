@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #2b2e31;
 }
 
 .wrapper {
@@ -27,26 +27,28 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(206, 8%, 65%);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(234, 21%, 40%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  box-shadow: rgba(185, 153, 238, 0.15) 0px 2px 8px 6px;
+  color: hsl(206, 8%, 65%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  text-align: center;
+
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #818385;
   height: 2px;
 }
 
@@ -62,7 +64,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #818385;
   height: 2px;
 }
 
@@ -74,17 +76,15 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: hsl(138, 42%, 45%);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
+  color: hsl(180, 3%, 6%);
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -100,6 +100,7 @@ button[disabled] {
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: #e5baf7;
   appearance: none;
   border: none;
   display: block;
@@ -112,11 +113,31 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
+  border: 3px solid hsl(138, 42%, 45%);
+  border-radius: 4px;
   resize: none;
   overflow: hidden;
 }
+
+
+
+.btn-group-toggle {
+
+  margin-bottom: 8px;
+
+}
+
+.btn-secondary:active:focus {
+
+  background-color:red;
+}
+
+.btn-secondary:active {
+  background-color: red;
+
+}
+
+
 
 @media (max-width: 690px) {
   .btn {
