@@ -2,41 +2,28 @@
 
 You can find this project here: https://cobypear.github.io/JavaScriptPasswordGenerator/
 
-    This application will prompt the user to state how long their password should be (between 8 and 128 characters), if , numeric lowercase, uppercase, and/or special characters should be included. At least one character of each type selected should be included in the generated password. After all prompts are answered, generate the password.
+This application generates a random password based on user input.
 
-## User Interface
+The user can select the length of the password, as well as what types of characters appear in the final generated password.
 
-    The user interface is very simple.
-![Password Generator UI](https://i.imgur.com/0HEUja0.jpg)
+## Changelog
+
+9/6/2020: 
+- User can now specify password length with slider
+- User can now specify types of chars in password with toggle buttons
+- Better handling when no char types are selected
 
 ## Generating a Password
 
-        To generate a password, click the Generate Password button.
-    A prompt will appear asking the user how long they would like their password, between 8 and 128 characters.
+To generate a password, first use the slider to select the desired length of your password.
 
-![Length Prompt](https://imgur.com/aXuRkic.jpg)
+The buttons can be toggled on or off. If a button is on, that character type will appear in your final password.
 
-        Then a series of confirms will ask the user what they would like their password to consist of:
-    Lowercase letters, uppercase letters, numbers, and/or special characters.
-
-![Lowercase Confirm](https://imgur.com/mVIjwa2.jpg)
-![Uppercase Confirm](https://imgur.com/JmwWpZu.jpg)
-![Numeral Confirm](https://imgur.com/4RvKcHY.jpg)
-![Special Character Confirm](https://imgur.com/HiULAQD.jpg)
-
-    The generated password will appear in the field as such (this password uses all character types avaiable):
-
-![Generated Password](https://imgur.com/rmP9HH6.jpg)
-
-        In case the user enters a number outside the appropriate range or the user 
-    fails to choose a type of character, the following messages will display:
-
-![Invalid Length](https://imgur.com/6rWsH40.jpg)
-![No Chars Chosen](https://imgur.com/ugPRlgT.jpg)
+Once you have selected the character types you would like in your final password, click `Generate Password`, and your password will appear in the text area.
 
 ## Note!
 
-    This is not intended to make secure passwords, use at your own risk!
+This is not intended to make secure passwords, use at your own risk!
 
 
 

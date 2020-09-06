@@ -45,7 +45,7 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
 
   // I think we need an if statement here. maybe a switch?
   // check user input and generate approriate characters
-  if (userLength >= 8 && userLength <= 128) {
+  if (userLength) {
     // checkboxes determine type of characters to use in final password
     const userLower = chars.lowercase;
     const userUpper = chars.uppercase
@@ -75,17 +75,11 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
         typesArr.push(getSpecial())[i];
       }
       else if (userLower == false && userUpper == false && userNumber == false && userSpecial == false) {
-        return alert('Please select at least one type of character for your password and try again')
-      }
+        return;
     };
     // if the userLength is too low or too high, ask the user for an appropriate number
-  } else {
-    alert('Please enter a number between 8 and 128 and try again');
-    return;
   };
-
-  // set the result to a variable. the result will take a section of the appropriate lengthfrom the array
-  // var finalPw = typesArr.slice(0, userLength).join('');
+}
 
   // shuffle the password to make it more random
   //here's a function that will attempt to shuffle the array
@@ -101,14 +95,6 @@ function generatePassword(userLength, userLower, userUpper, userNumber, userSpec
   // turn the password into a string
   finalPw = finalPw.join('');
 
-  // debugging
-  console.log('TYPESARR: ', typesArr);
-  console.log('SHUFFLED PW: ',);
-  // what is the final pw?
-  console.log('FINALPW: ', finalPw);
-  // does the final password match userLength?
-  console.log('FINALPW LENGTH: ', finalPw.length);
-
   // return the generated password based on the passed in information
   return finalPw;
 };
@@ -119,7 +105,6 @@ function writePassword() {
   const passwordText = document.querySelector("#password");
 
   passwordText.value = password || "Select at least one character type and try again";
-
 };
 
 // on change, update the value of the slider on the
@@ -135,8 +120,5 @@ for (const button of toggleBtn) {
   })
 }
 
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
