@@ -16,56 +16,79 @@
         <header>
             <h1>Password Generator</h1>
         </header>
+        <main>
+            <div class="card">
 
-        <div class="card">
+                <div class="card-header">
+                    <h2>Generate a Password</h2>
+                </div>
 
-            <div class="card-header">
-                <h2>Generate a Password</h2>
+                <div class="card-body">
+                    <div class="row-fluid">
+                        <label for="slider" class="col"> <h4>Password Length</h4> </label>
+                        <input type="range" min="8" max="128" class="slider col" id="slider">
+                        <h5 id="sliderValue"></h5>
+                    </div>
+
+
+                    <div class="buttonWrapper">
+                        
+                        <button type="button" class="btn btn-group btn-group-toggle toggleBtn" data-toggle="button" aria-pressed="false" autocomplete="off" id="lowercase">
+                            Lowercase
+                        </button>
+
+                        <button type="button" class="btn btn-group btn-group-toggle toggleBtn" data-toggle="button" aria-pressed="false" autocomplete="off" id="uppercase">
+                            Uppercase
+                        </button>
+
+                        <button type="button" class="btn btn-group btn-group-toggle toggleBtn" data-toggle="button" aria-pressed="false" autocomplete="off" id="numerals">
+                            Numbers
+                        </button>
+
+                        <button type="button" class="btn btn-group btn-group-toggle toggleBtn" data-toggle="button" aria-pressed="false" autocomplete="off" id="specialChars">
+                            Special Characters
+                        </button>
+
+                        <!-- <div class="btn-group-toggle col-3" data-toggle="buttons">
+                            <label class="btn choice" id="uppercase">
+                    <input type="checkbox" checked data-toggle="button"> Uppercase
+                  </label>
+                        </div>
+
+
+
+                        <div class="btn-group-toggle  col-3" data-toggle="buttons">
+                            <label class="btn choice" id="lowercase">
+                    <input type="checkbox" checked data-toggle="button"> lowercase
+                  </label>
+                        </div>
+
+
+
+                        <div class="btn-group-toggle  col-3" data-toggle="buttons">
+                            <label class="btn choice" id="numerals">
+                    <input type="checkbox" checked data-toggle="button"> Numbers
+                  </label>
+                        </div>
+
+
+                        <div class="btn-group-toggle col-3" id="special-chars" data-toggle="buttons">
+                            <label class="btn choice">
+                    <input type="checkbox" checked data-toggle="button"> Special Characters
+                  </label>
+                        </div> -->
+
+                    </div>
+
+
+                    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+                </div>
+
+                <div class="card-footer">
+                    <button id="generate" class="btn">Generate Password</button>
+                </div>
             </div>
-
-            <div class="card-body">
-
-
-                <div class="row">
-
-                  <div class="btn-group-toggle col-3" data-toggle="buttons">
-                    <label class="btn btn-secondary active choice" id="uppercase">
-                <input type="checkbox" checked data-toggle="button"> Uppercase
-              </label>
-                </div>
-
-
-
-                <div class="btn-group-toggle  col-3" data-toggle="buttons">
-                    <label class="btn btn-secondary active choice" id="lowercase">
-                <input type="checkbox" checked data-toggle="button"> lowercase
-              </label>
-                </div>
-
-
-
-                <div class="btn-group-toggle  col-3" data-toggle="buttons">
-                    <label class="btn btn-secondary active choice" id="numerals">
-                <input type="checkbox" checked data-toggle="button"> Numbers
-              </label>
-                </div>
-
-
-                <div class="btn-group-toggle col-3" id="special-chars" data-toggle="buttons">
-                    <label class="btn btn-secondary active choice">
-                <input type="checkbox" checked data-toggle="button"> Special Characters
-              </label>
-                </div>
-                </div>
-
-
-                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-            </div>
-
-            <div class="card-footer">
-                <button id="generate" class="btn">Generate Password</button>
-            </div>
-        </div>
+        </main>
 
 
     </div>

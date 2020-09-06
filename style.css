@@ -74,18 +74,35 @@ header {
   clear: both;
 }
 
+#sliderValue {
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
 .btn {
-  border: none;
-  background-color: hsl(138, 42%, 45%);
+  border: 3px solid rgba(211, 30, 235, 0);
+  background-color: rgba(61, 189, 35, 0.8);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
   color: hsl(180, 3%, 6%);
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  /* margin: 8px 8px 8px 10px; */
+  margin: 8px 10px;
   padding: 14px 34px;
   cursor: pointer;
+  text-align: center;
+}
+
+.active {
+  border: 3px solid rgb(211, 30, 235);
+  background-color: rgba(61, 189, 35, 0.8);
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
 button[disabled] {
@@ -124,16 +141,6 @@ button[disabled] {
 .btn-group-toggle {
 
   margin-bottom: 8px;
-
-}
-
-.btn-secondary:active:focus {
-
-  background-color:red;
-}
-
-.btn-secondary:active {
-  background-color: red;
 
 }
 
