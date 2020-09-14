@@ -15,6 +15,11 @@ The user can select the length of the password, as well as what types of charact
 - User can now specify types of chars in password with toggle buttons
 - Better handling when no char types are selected
 
+9/14/2020
+- Styled the slider
+- Updated README with screenshot of the site
+- User can now click on generated password to automatically copy it to the clipboard
+
 ## Generating a Password
 
 To generate a password, first use the slider to select the desired length of your password.
