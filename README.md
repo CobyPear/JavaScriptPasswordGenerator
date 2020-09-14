@@ -6,7 +6,7 @@ This application generates a random password based on user input.
 
 The user can select the length of the password, as well as what types of characters appear in the final generated password.
 
-![Password Generator Screenshot](\assets\passwordGenerator.png)
+![Password Generator Screenshot](./assets/passwordGenerator.png)
 
 ## Changelog
 
