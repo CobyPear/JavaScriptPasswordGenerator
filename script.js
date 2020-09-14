@@ -132,10 +132,7 @@ generatedPassword.addEventListener("click", (e) => {
   
     document.execCommand("copy");
 
-    // const toast = document.getElementById("toast");
-    $("#toast").toggle()
-    $("#toast").fadeOut("slow");
-    // $("#toast")
-
+    // $("#toast").toggle()
+    $("#toast").toggle().fadeOut(3000)
 
 })
