@@ -4,6 +4,7 @@ const generateBtn = document.querySelector("#generate");
 const sliderRender = document.querySelector("#sliderValue");
 const slider = document.querySelector("#slider");
 const toggleBtn = document.querySelectorAll(".toggleBtn");
+const generatedPassword = document.querySelector("#password")
 // set initial value of slider value to default
 sliderRender.textContent = slider.value;
 
@@ -122,3 +123,19 @@ for (const button of toggleBtn) {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// click password text area to copy password to clipboard
+generatedPassword.addEventListener("click", (e) => {
+
+    generatedPassword.select();
+    generatedPassword.setSelectionRange(0, 999999);
+  
+    document.execCommand("copy");
+
+    // const toast = document.getElementById("toast");
+    $("#toast").toggle()
+    $("#toast").fadeOut("slow");
+    // $("#toast")
+
+
+})

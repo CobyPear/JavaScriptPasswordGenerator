@@ -144,6 +144,9 @@ button[disabled] {
 
 }
 
+#toast {
+  display: none;
+}
 
 
 @media (max-width: 690px) {
