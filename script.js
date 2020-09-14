@@ -109,8 +109,8 @@ function writePassword() {
 };
 
 // on change, update the value of the slider on the
-slider.addEventListener("change", (e) => {
-  sliderRender.textContent = slider.value;
+slider.addEventListener("mousemove", (e) => {
+  sliderRender.textContent = slider.value + " characters";
 })
 
 // on click, toggle the appropriate property in chars

@@ -78,6 +78,7 @@ header {
   margin-top: 5px;
   margin-right: 20px;
   margin-left: 20px;
+  font-size: 1.5em;
 }
 .btn {
   border: 3px solid rgba(211, 30, 235, 0);
