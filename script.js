@@ -6,7 +6,8 @@ const slider = document.querySelector("#slider");
 const toggleBtn = document.querySelectorAll(".toggleBtn");
 const generatedPassword = document.querySelector("#password")
 // set initial value of slider value to default
-sliderRender.textContent = slider.value;
+sliderRender.textContent = slider.value + " characters";
+console.log(slider.value)
 
 const chars = {
   lowercase: false,
@@ -110,6 +111,9 @@ function writePassword() {
 
 // on change, update the value of the slider on the
 slider.addEventListener("mousemove", (e) => {
+  sliderRender.textContent = slider.value + " characters";
+})
+slider.addEventListener("touchmove", (e) => {
   sliderRender.textContent = slider.value + " characters";
 })
 
