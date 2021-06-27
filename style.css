@@ -39,7 +39,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 30px 20px;
   text-align: center;
 
 }
@@ -110,10 +110,10 @@ button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
-
+/* 
 .float-right {
   float: right;
-}
+} */
 
 #password {
   -webkit-appearance: none;
@@ -135,6 +135,7 @@ button[disabled] {
   border-radius: 4px;
   resize: none;
   overflow: hidden;
+  font-family: 'Cutive Mono', monospace;
 }
 
 #password::selection {
@@ -267,5 +268,8 @@ input[type=range]:focus::-ms-fill-upper {
   .buttonWrapper {
     display: flex;
     flex-flow: column nowrap;
+  }
+  .btn {
+    justify-content: center;
   }
 }
