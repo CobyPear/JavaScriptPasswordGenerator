@@ -41,7 +41,6 @@ header {
   max-width: 800px;
   padding: 30px 20px;
   text-align: center;
-
 }
 
 .card-header::after {
@@ -80,6 +79,7 @@ header {
   margin-left: 20px;
   font-size: 1.5em;
 }
+
 .btn {
   border: 3px solid rgba(211, 30, 235, 0);
   background-color: rgba(61, 189, 35, 0.8);
@@ -110,6 +110,8 @@ button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
+
+
 /* 
 .float-right {
   float: right;
@@ -139,16 +141,13 @@ button[disabled] {
 }
 
 #password::selection {
-  background-color: #43a35f;;
+  background-color: #43a35f;
+  ;
   color: rgb(74, 0, 83);
 }
 
-
-
 .btn-group-toggle {
-
   margin-bottom: 8px;
-
 }
 
 #toast {
@@ -170,26 +169,32 @@ input[type=range]:focus {
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
-
-  background:  #38bb5f;;
+  background: #38bb5f;
+  ;
   border-color: transparent;
   color: #38bb5f;
 }
 
+
 /* Special styling for WebKit/Blink */
+
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #0000;
   height: 36px;
   width: 16px;
   border-radius: 3px;
-  background:  rgb(211, 30, 235);
+  background: rgb(211, 30, 235);
   cursor: pointer;
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  margin-top: -14px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */
 }
 
+
 /* All the same stuff for Firefox */
+
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -200,7 +205,9 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
+
 /* All the same stuff for IE */
+
 input[type=range]::-ms-thumb {
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
@@ -244,27 +251,30 @@ input[type=range]::-ms-track {
   border-width: 16px 0;
   color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
+
 input[type=range]:focus::-ms-fill-lower {
   background: #43a35f;
 }
+
 input[type=range]::-ms-fill-upper {
   background: #43a35f;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }
 
 @media (max-width:810px) {
-
   .buttonWrapper {
     display: flex;
     flex-flow: column nowrap;
